@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          ExchangeRateOpenFeign:
+            url: "http://www.apilayer.net/api"
+            connectTimeout: 5000
+            readTimeout: 5000
+
+logging:
+  level:
+    com.youth.javacurrencycalculator.infrastructure.CurrencyExchangeClient: debug
+
+client:
+  key: ${client.key}
