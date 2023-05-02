@@ -4,7 +4,7 @@ spring:
       client:
         config:
           ExchangeRateOpenFeign:
-            url: "http://www.apilayer.net/api"
+            url: "https://api.apilayer.com"
             connectTimeout: 5000
             readTimeout: 5000
 
@@ -13,4 +13,4 @@ logging:
     com.youth.javacurrencycalculator.infrastructure.OpenFeignClient: debug
 
 client:
-  access-key: ${client.access-key}
+  apikey: ${client.access-key}

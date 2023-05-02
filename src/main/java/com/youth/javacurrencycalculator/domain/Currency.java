@@ -1,9 +1,12 @@
-package com.youth.javacurrencycalculator.dto;
+package com.youth.javacurrencycalculator.domain;
+
 
 import lombok.Getter;
 
+import java.text.DecimalFormat;
+
 @Getter
-public class CurrencyResponse {
+public class Currency {
 
     private String code;
 
@@ -11,7 +14,7 @@ public class CurrencyResponse {
 
     private double exchange;
 
-    public CurrencyResponse(String code, String name, double exchange) {
+    public Currency(String code, String name, double exchange) {
         this.code = code;
         this.name = name;
         this.exchange = exchange;
