@@ -10,7 +10,7 @@ spring:
 
 logging:
   level:
-    com.youth.javacurrencycalculator.infrastructure.CurrencyExchangeClient: debug
+    com.youth.javacurrencycalculator.infrastructure.OpenFeignClient: debug
 
 client:
-  key: ${client.key}
+  access-key: ${client.access-key}
