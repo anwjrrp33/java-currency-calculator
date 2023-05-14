@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "ExchangeRateOpenFeign")
 public interface CurrencyExchangeFeignClient {
 
-    @GetMapping("/currency_data/live?source=USD&currencies=KRW,JPY,PHP")
+    @GetMapping("/currency_data/live")
     CurrencyExchangeResponse call(@RequestHeader(name = "apikey") String apikey,
                                   @RequestParam(name = "source") String source,
                                   @RequestParam(name = "currencies") String currencies);
