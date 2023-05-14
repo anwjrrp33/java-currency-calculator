@@ -6,8 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.List;
-
 @Controller
 @RequiredArgsConstructor
 public class ViewController {
@@ -16,7 +14,7 @@ public class ViewController {
 
     @GetMapping("/currency-calculator")
     public String currencyCalculator(Model model) {
-        model.addAttribute("currencies", currencyExchangeService.call());
+        model.addAttribute("currencies", currencyExchangeService.list());
         return "currency-calculator";
     }
 }
