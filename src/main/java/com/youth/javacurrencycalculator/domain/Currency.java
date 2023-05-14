@@ -3,8 +3,6 @@ package com.youth.javacurrencycalculator.domain;
 
 import lombok.Getter;
 
-import java.text.DecimalFormat;
-
 @Getter
 public class Currency {
 
